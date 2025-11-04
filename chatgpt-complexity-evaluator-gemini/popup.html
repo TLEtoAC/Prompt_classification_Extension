@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width:320px; padding:20px; font-family:system-ui; margin:0; background:linear-gradient(135deg, #4285f4, #34a853); }
+    .container { background:white; border-radius:12px; padding:20px; box-shadow:0 4px 12px rgba(0,0,0,0.2); }
+    h1 { margin:0 0 5px 0; font-size:18px; color:#4285f4; }
+    .subtitle { font-size:12px; color:#666; margin-bottom:15px; }
+    label { display:block; margin-bottom:8px; font-weight:600; font-size:13px; }
+    input { width:100%; padding:10px; border:2px solid #ddd; border-radius:8px; font-size:13px; font-family:monospace; box-sizing:border-box; }
+    input:focus { outline:none; border-color:#4285f4; }
+    button { width:100%; padding:10px; margin-top:10px; border:none; border-radius:8px; font-size:14px; font-weight:600; cursor:pointer; background:#34a853; color:white; }
+    button:hover { background:#2d8e47; }
+    .status { margin-top:10px; padding:10px; border-radius:6px; font-size:12px; text-align:center; display:none; }
+    .success { background:#d1fae5; color:#065f46; display:block; }
+    .error { background:#fee2e2; color:#991b1b; display:block; }
+    .info { background:#e8f0fe; padding:10px; margin-top:15px; border-radius:6px; font-size:11px; color:#1967d2; line-height:1.5; }
+    a { color:#1967d2; font-weight:600; text-decoration:none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>⚡ Complexity Evaluator</h1>
+    <p class="subtitle">Powered by Google Gemini</p>
+    
+    <label for="apiKey">Gemini API Key:</label>
+    <input type="password" id="apiKey" placeholder="AIzaSy...">
+    
+    <button id="saveBtn">Save Key</button>
+    
+    <div class="status" id="status"></div>
+    
+    <div class="info">
+      <strong>📌 Get your API key:</strong><br>
+      Visit <a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a> → Sign in → Create API Key
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
