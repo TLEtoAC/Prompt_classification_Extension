@@ -9,9 +9,9 @@ console.log('  SSL: enabled (rejectUnauthorized: false)');
 
 const pool = new Pool({
   user: "postgres",
-  host: "db.elsjbpgtfjabfkkfnusi.supabase.co",
+  host: "url.supabase.co",
   database: "postgres",
-  password: "sagarisgrea",
+  password: "pass",
   port: 5432,
   ssl: {
     rejectUnauthorized: false,
