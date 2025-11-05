@@ -164,10 +164,5 @@ Saves prompt evaluation to database
 - **Database**: PostgreSQL
 - **Libraries**: pg, cors
 
-## License
 
-MIT
 
-## Author
-
-Your Name
